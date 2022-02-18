@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Tabla de colores</title>
+</head>
+
+<body>
+    <P>
+        <center>
+            <h1>C&oacute;digos hexadecimales de los colores</h1>
+            <SCRIPT LANGUAGE="JavaScript">
+                clr = new Array('ff','ee','dd','cc','bb','aa','90','80','70','60','50','40','30','20','10','00');
+                for (i = 0; i < 16; i++) {
+                    document.write("<table border=1 cellpadding=16>");
+                    for (j = 0; j < 16; j++) {
+                        document.write("<tr>");
+                        for (k = 0; k < 16; k++) {
+                            document.write('<td bgcolor="#' + clr[i] + clr[j] + clr[k] + '">');
+                            document.write('<tt><font color = "#' + clr[7 - i] + clr[7 - j] + clr[7 - k] + '"> ');
+                            document.write(clr[i] + clr[j] + clr[k] + '</font></tt ></td > ');
+                        }
+                        document.write("</tr>");
+                    }
+                    document.write("</table><br>");
+                }
+            </script>
+        </center>
+
+        <hr>
+</body>
+
+</html>
